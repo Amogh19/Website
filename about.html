@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Amogh V">
+        <meta name="description" content="My First ever Responsive Web Site">
+        <meta name="keywords" content="Responsive Web Design, Still Learning">
+        <title>Amogh's Personal Website</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <img src="Images/profile.jpg">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="about.html">About</a>
+						<li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+                  <marquee  behavior="scroll" direction="left" scrollamount="4"
+                     onmouseover="this.setAttribute('scrollamount',0,0);this.stop();"
+                     onmouseout="this.setAttribute('scrollamount',4,0);this.start();"
+                     class="moving-body">
+                <script>
+                    for(var i=0; i<=10; i++)
+                        {
+                            document.write('You can contact me at 8897594629 or e-mail me at 121810308065@gitam.in. || ');
+                        }
+                </script>
+            </marquee>
+            </div>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <h1>ABOUT</h1>
+                <div class="container2">
+  <img src="Images/codingimage.jpg" alt="img" style="width:100%;">
+  <div class="centered">
+                    I have decided to utilize a completely different development pattern that focuses on highly focused
+            communication and transparent design patterns. When I take on a project not only do I work to craft the application
+            according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+            with the client's goals. The end result is the right product, delivered on time, and on budget.
+            </div>
+				</div>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe to my weekly Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter your e-mail here...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section> 
+    
+        <footer>
+            <p width=200%>Amogh V, Copyright &copy; 2020</p>
+        </footer>
+    </body>
+</html>    

@@ -1,0 +1,111 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Amogh V">
+        <meta name="description" content="describe ebs">
+        <meta name="keywords" content="admissions placements courses">
+        <title>Amogh's Personal Website</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <img src="Images/profile.jpg">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a>
+						<li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+                  <marquee  behavior="scroll" direction="left" scrollamount="4"
+                     onmouseover="this.setAttribute('scrollamount',0,0);this.stop();"
+                     onmouseout="this.setAttribute('scrollamount',4,0);this.start();"
+                     class="moving-body">
+                <script>
+                    for(var i=0; i<=100; i++)
+                        {
+                            document.write('You can contact me at 8897594629 or e-mail me at 121810308065@gitam.in. || ');
+                        }
+                </script>
+            </marquee>
+            </div>
+        </header>
+		 <div class="container-imgs">
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/codingimage.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/web.jpg" alt="">
+            </div>
+
+            <div class="subtitle">I built this very website. It is one of my earliest hands-on project.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/quiz.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/yono.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Stood Second in the state level SBI YONO QUIZ 2020.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/gaming.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/fifa.jpg" alt="">
+            </div>
+
+            <div class="subtitle">I am an ardent FIFA gamer.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/socialmedia.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/linkedin.jpg" alt="">
+            </div>
+
+            <div class="subtitle">I am very active on LinkedIn.</div>
+          </div>
+        </div>
+
+       
+		</div>
+          </div>
+        </div>
+        <footer>
+            <p>Amogh V, Copyright &copy; 2020</p>
+        </footer>
+    </body>
+	<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+  });
+
+</script>
+</html>
